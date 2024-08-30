@@ -1,3 +1,9 @@
 docker ps -l -> list containers
+
+#creates new docker image to run from
 docker run -it --ipc=host image_name
 docker commit container_id
+
+#reuses old docker container with file changes
+docker start container_id
+docker attach container_id
